@@ -1,0 +1,15 @@
+2019-03-18 15:55:10.2588   (EventSystem.cs:299) System.IO.DirectoryNotFoundException: Could not find a part of the path 'F:\Unity Project\ET Project\Learn Project\3.6\ET_Server\Config\StartConfig\LocalAllServer.txt'.
+   at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at ETModel.StartConfigComponent.Awake(String path, Int32 appId) in F:\Unity Project\ET Project\Learn Project\3.6\ET_Server\Server\Model\Component\StartConfigComponent.cs:line 39
+   at ETModel.StartConfigComponentSystem.Awake(StartConfigComponent self, String a, Int32 b) in F:\Unity Project\ET Project\Learn Project\3.6\ET_Server\Server\Model\Component\StartConfigComponent.cs:line 13
+   at ETModel.AwakeSystem`3.Run(Object o, A a, B b) in F:\Unity Project\ET Project\Learn Project\3.6\ET_Server\Unity\Assets\Scripts\Base\Object\IAwakeSystem.cs:line 69
+   at ETModel.EventSystem.Awake[P1,P2](Component component, P1 p1, P2 p2) in F:\Unity Project\ET Project\Learn Project\3.6\ET_Server\Unity\Assets\Scripts\Base\Object\EventSystem.cs:line 299
+2019-03-18 15:55:10.3970   (Program.cs:24) System.NullReferenceException: Object reference not set to an instance of an object.
+   at App.Program.Main(String[] args) in F:\Unity Project\ET Project\Learn Project\3.6\ET_Server\Server\App\Program.cs:line 24
+2019-03-18 15:57:19.7883 AllServer 001 (Program.cs:37) server start........................ 1 AllServer
